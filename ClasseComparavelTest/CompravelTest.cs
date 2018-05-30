@@ -10,7 +10,7 @@ namespace ClasseComparavelTest
         [TestMethod]
         public void TestInstance()
         {
-            new Comparavel(10);
+            new Comparavel();
 
             Equals(true);
         }
@@ -18,37 +18,37 @@ namespace ClasseComparavelTest
         [TestMethod]
         public void TestMaiorOuIgualTrue()
         {
-            Assert.AreEqual(true, new Comparavel(10).MaiorOuIgual(5));
+            Assert.AreEqual(true, new Comparavel().MaiorOuIgual(5));
         }
 
         [TestMethod]
         public void TestMaiorOuIgualFalse()
         {
-            Assert.AreEqual(false, new Comparavel(5).MaiorOuIgual(10));
+            Assert.AreEqual(false, new Comparavel().MaiorOuIgual(15));
         }
 
         [TestMethod]
         public void TestMenorOuIgualTrue()
         {
-            Assert.AreEqual(true, new Comparavel(5).MenorOuIgual(10));
+            Assert.AreEqual(true, new Comparavel().MenorOuIgual(15));
         }
 
         [TestMethod]
         public void TestMenorOuIgualFalse()
         {
-            Assert.AreEqual(false, new Comparavel(10).MenorOuIgual(5));
+            Assert.AreEqual(false, new Comparavel().MenorOuIgual(5));
         }
 
         [TestMethod]
         public void TestDiferenteDeTrue()
         {
-            Assert.AreEqual(true, new Comparavel(5).DiferenteDe(10));
+            Assert.AreEqual(true, new Comparavel().DiferenteDe(15));
         }
 
         [TestMethod]
         public void TestDiferenteDeFalse()
         {
-            Assert.AreEqual(false, new Comparavel(5).DiferenteDe(5));
+            Assert.AreEqual(false, new Comparavel().DiferenteDe(10));
         }
     }
 }

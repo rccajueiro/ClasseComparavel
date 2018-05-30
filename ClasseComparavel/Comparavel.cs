@@ -8,28 +8,26 @@ namespace ClasseComparavel
 {
     public class Comparavel
     {
-        private int valor;
+        private int valorEncapsulado;
 
-        public int Valor { get; }
-
-        public Comparavel(int Valor)
+        public Comparavel()
         {
-            valor = Valor;
+            this.valorEncapsulado = 10;
         }
 
-        public bool MaiorOuIgual(int ValorPassado)
+        public bool MaiorOuIgual(int valor)
         {
-            return this.valor >= ValorPassado;
+            return this.valorEncapsulado >= valor;
         }
 
-        public bool MenorOuIgual(int ValorPassado)
+        public bool MenorOuIgual(int valor)
         {
-            return this.valor <= ValorPassado;
+            return this.valorEncapsulado <= valor;
         }
 
-        public bool DiferenteDe(int ValorPassado)
+        public bool DiferenteDe(int valor)
         {
-            return this.valor != ValorPassado;
+            return this.valorEncapsulado != valor;
         }
     }
 }
